@@ -79,12 +79,13 @@ To get started with this project locally:
    cd value-props-analysis
 
 2. 📦 Install dependencies:
-    From the root directory.
     ```bash
+    # From the root directory.
     pip install -r analyzer/requirements.txt
 
 3. ▶️ Run the pipeline:
-    From the root directory.
-    The output will be a clean dataset inside the data folder ready for analysis or integration.
     ```bash
+    # From the root directory.
     python3 -m analyzer.get_dataset
+
+    The output will be a clean dataset inside the data folder ready for analysis or integration.
