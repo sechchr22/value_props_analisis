@@ -57,10 +57,9 @@ Similar to prints/taps, but isolated for clarity:
 - 🔗 Left-merge with payments on `user_id` and `value_prop`
 - 🧼 Fill NaNs with 0 and cast payment count to `int`
 - 📅 Filter records from the last week
-- 🗑️ Drop `day` column (no longer needed)
 - 📊 Sort by `user_id`, `value_prop`, and `accumulated_amount` (to prioritize high-value props)
 - 🔄 Reset index for a clean DataFrame
-- 🧹 Remove duplicates:
+- 🧹 Remove duplicates (status: optional, not applied because of testing proves):
   - Important to avoid redundant records
   - Example: multiple prints for `user_id = 1` and `value_prop = cellphone_recharge` on different days within the same week would reflect the same metrics—no need to keep both
 
@@ -88,3 +87,8 @@ To get started with this project locally:
     # From the root directory.
     # Output: clean dataset inside the data folder ready for analysis or integration.
     python3 -m analyzer.get_dataset
+
+4. ▶️ Run the tests:
+    ```bash
+    # From the root directory.
+    pytest

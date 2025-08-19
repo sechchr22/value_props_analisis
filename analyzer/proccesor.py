@@ -4,10 +4,10 @@
 
 import pandas as pd
 import numpy as np
-from concurrent.futures import ThreadPoolExecutor
-from multiprocessing import Pool
 from typing import Tuple
 from analyzer.parser import Parser
+from multiprocessing import Pool
+from concurrent.futures import ThreadPoolExecutor
 
 class Processor():
     """
@@ -164,7 +164,7 @@ class Processor():
             pd.DataFrame: Final enriched and filtered DataFrame.
         """
         cumputed_dfs, dates = Processor.compute_dfs(files)
-        prints, taps, payments, = cumputed_dfs
+        prints, taps, payments = cumputed_dfs
 
         prints.rename(columns={'count': 'prints'}, inplace=True)
         taps = (taps.rename(columns={'count': 'taps'}).drop(columns='day'))
@@ -179,9 +179,7 @@ class Processor():
             .fillna(0)
             .astype({'payments': 'int'})
             .loc[lambda d: d['day'].between(dates['one_week_ago'], dates['most_recent_day'])]
-            .drop(columns='day')
             .sort_values(by=['user_id', 'accumulated_amount'], ascending=[True, False])
             .reset_index(drop=True)
-            .drop_duplicates()
         )
         return final_df
