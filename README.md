@@ -82,7 +82,7 @@ To get started with this project locally:
     ```bash
     pip install -r analyzer/requirements.txt
 
-3. ▶️ Run the pipeline from the project root:
+3. ▶️ Run the pipeline:
     From the root directory.
     The output will be a clean dataset inside the data folder ready for analysis or integration.
     ```bash
