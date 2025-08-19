@@ -86,6 +86,5 @@ To get started with this project locally:
 3. ▶️ Run the pipeline:
     ```bash
     # From the root directory.
+    # Output: clean dataset inside the data folder ready for analysis or integration.
     python3 -m analyzer.get_dataset
-
-    The output will be a clean dataset inside the data folder ready for analysis or integration.
