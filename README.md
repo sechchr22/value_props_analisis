@@ -66,8 +66,6 @@ Similar to prints/taps, but isolated for clarity:
 
 ### 6. 💾 Save Dataset
 - Saving the dataset into the data folder
-  <img width="764" height="640" alt="Screenshot 2025-08-19 at 12 42 16 PM" src="https://github.com/user-attachments/assets/21785de8-86e7-4abe-b66c-bac4c0a7a7e6" />
-
 
 ## 🚀 How to Run It
 
@@ -88,3 +86,6 @@ To get started with this project locally:
     # From the root directory.
     # Output: clean dataset inside the data folder ready for analysis or integration.
     python3 -m analyzer.get_dataset
+    
+### OUTPUT EXAMPLE    
+<img width="764" height="640" alt="Screenshot 2025-08-19 at 12 42 16 PM" src="https://github.com/user-attachments/assets/21785de8-86e7-4abe-b66c-bac4c0a7a7e6" />
