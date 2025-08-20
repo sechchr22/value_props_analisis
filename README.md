@@ -92,6 +92,6 @@ To get started with this project locally:
     pytest
     
 ### Outputs Example ✅  
-<img width="764" height="640" alt="Screenshot 2025-08-19 at 12 42 16 PM" src="https://github.com/user-attachments/assets/21785de8-86e7-4abe-b66c-bac4c0a7a7e6" />
+<img width="970" height="860" alt="Screenshot 2025-08-19 at 7 08 23 PM" src="https://github.com/user-attachments/assets/652f22a3-944f-4f16-8fa0-0df3565c0986" />
 <img width="864" height="211" alt="Screenshot 2025-08-19 at 6 57 49 PM" src="https://github.com/user-attachments/assets/82cc35f0-2a25-4ace-828d-76704b0d9813" />
 
